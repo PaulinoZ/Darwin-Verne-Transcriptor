@@ -5,7 +5,7 @@ import urllib.parse
 import requests
 import importlib.metadata
 
-st.set_page_config(page_title="Darwin&Verne Audio Transcriber", max_upload_size=500)
+# st.set_page_config(page_title="Darwin&Verne Audio Transcriber", max_upload_size=500)
 
 # Speaker colors
 speaker_colors = {
