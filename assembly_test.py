@@ -10,6 +10,24 @@ speaker_colors = {
     "Speaker A": "#FF5733",
     "Speaker B": "#33C4FF",
     "Speaker C": "#8EFF33",
+    "Speaker D": "#FF33E6",
+    "Speaker E": "#FFD933",
+    "Speaker F": "#33FFC4",
+    "Speaker G": "#336BFF",
+    "Speaker H": "#FF336B",
+    "Speaker I": "#33FF33",
+    "Speaker J": "#FF3333",
+    "Speaker K": "#3333FF",
+    "Speaker L": "#FF33C4",
+    "Speaker M": "#33FF33",
+    "Speaker N": "#FF33FF",
+    "Speaker O": "#33C4FF",
+    "Speaker P": "#FF5733",
+    "Speaker Q": "#33C4FF",
+    "Speaker R": "#8EFF33",
+    "Speaker S": "#FF33E6",
+    "Speaker T": "#FFD933",
+    "Speaker U": "#33FFC4",
 }
 
 def transcribe_audio(audio_file):
@@ -28,7 +46,7 @@ def transcribe_audio(audio_file):
         return transcript
 
 def main():
-    aai.settings.api_key = "468aa672054a4f0c9c534eb91209a478"
+    aai.settings.api_key = st.secrets["assembly_api_key"]
 
     st.title("Darwin&Verne Audio Transcriber")
     audio_file = st.file_uploader("Desplaza tus archivos de audio aquí:", type=['mp3'])
