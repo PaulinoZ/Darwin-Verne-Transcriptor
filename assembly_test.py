@@ -5,6 +5,8 @@ import urllib.parse
 import requests
 import importlib.metadata
 
+st.set_page_config(page_title="Darwin&Verne Audio Transcriber", max_upload_size=500)
+
 # Speaker colors
 speaker_colors = {
     "Speaker A": "#FF5733",
@@ -79,7 +81,7 @@ def main():
           st.download_button(
               label="Download Transcript",
               data=full_text,
-              file_name="transcript.txt",
+              file_name=f"{audio_file.name}_transcript.txt",
               mime="text/plain"
           )
 
