@@ -35,8 +35,9 @@ speaker_colors = {
 def transcribe_audio(audio_file):
     config = aai.TranscriptionConfig(
         speaker_labels=True,
-        language_code='es',
+        language_detection=True,
         disfluencies=False,
+        entity_detection=True
     )
 
     transcriber = aai.Transcriber()
